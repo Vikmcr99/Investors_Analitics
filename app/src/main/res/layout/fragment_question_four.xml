@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".QuestionOne">
+
+    <Button
+        android:id="@+id/btnQuestionThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="@color/purple_500"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="240sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnQuestionThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/rb3A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Não possuo formação acadêmica ou conhecimento do mercado financeiro"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rb3B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Possuo formação acadêmica na área financeira, mas não tenho experiência com o mercado financeiro"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rb3C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Possuo formação acadêmica em outra área, mas possuo conhecimento do mercado financeiro"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/rb3D"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Possuo formação acadêmica na área financeira ou pleno conhecimento do mercado financeiro"
+            android:textColor="@color/white" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvQuestionThree"
+        android:layout_width="378dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="64dp"
+        android:text="Qual das alternativas melhor classifica sua formação e experiência com o mercado financeiro?"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.787"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.028" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pontuação :"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnQuestionThree"
+        app:layout_constraintTop_toBottomOf="@+id/btnQuestionThree" />
+
+    <TextView
+        android:id="@+id/tvPontoQ2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btnQuestionThree"
+        app:layout_constraintTop_toBottomOf="@+id/btnQuestionThree" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
